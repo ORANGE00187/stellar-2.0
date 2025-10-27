@@ -1,0 +1,30 @@
+
+.navbar {
+  padding: 20px;
+  text-align: center;
+  z-index: 2;
+}
+
+.navbar-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  background: linear-gradient(45deg, #007bff, #ff00ff, #007bff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
